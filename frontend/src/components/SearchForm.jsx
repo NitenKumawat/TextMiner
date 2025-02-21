@@ -1,4 +1,6 @@
 import { useState } from "react";
+const API_URL = import.meta.env.VITE_API_URL;
+
 
 const FILE_TYPES = [
   ".txt", ".md", ".json", ".csv", ".log", ".xml", ".yaml", ".yml",
@@ -41,7 +43,7 @@ const SearchForm = () => {
     setResults([]);
   
     try {
-      const response = await fetch( `${import.meta.env.VITE_API_URL}/api/search`, {
+      const response = await fetch( `${API_URL}/api/search`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ searchTerm, searchDir, allowedFileTypes: selectedFileTypes }),
@@ -65,7 +67,7 @@ const SearchForm = () => {
 
 
   const openFile = (filePath) => {
-    fetch(`${import.meta.env.VITE_API_URL}/api/open-file`, {
+    fetch(`${API_URL}/api/open-file`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ filePath }),
