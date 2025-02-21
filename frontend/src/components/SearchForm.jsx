@@ -41,7 +41,7 @@ const SearchForm = () => {
     setResults([]);
   
     try {
-      const response = await fetch("http://localhost:5000/api/search", {
+      const response = await fetch( `${import.meta.env.VITE_API_URL}/api/search`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ searchTerm, searchDir, allowedFileTypes: selectedFileTypes }),
@@ -65,7 +65,7 @@ const SearchForm = () => {
 
 
   const openFile = (filePath) => {
-    fetch("http://localhost:5000/api/open-file", {
+    fetch(`${import.meta.env.VITE_API_URL}/api/open-file`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ filePath }),

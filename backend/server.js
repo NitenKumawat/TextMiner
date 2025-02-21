@@ -6,7 +6,7 @@ const { Worker } = require("worker_threads");
 const { exec } = require("child_process");
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 const MAX_DEPTH = 3; // Limit recursive depth
