@@ -1,6 +1,9 @@
 import { useState } from "react";
 const API_URL = import.meta.env.VITE_API_URL;
+// const API_URL = "http://localhost:5000";
 
+
+console.log("url "+ API_URL); // Should log your Render backend URL
 
 const FILE_TYPES = [
   ".txt", ".md", ".json", ".csv", ".log", ".xml", ".yaml", ".yml",
