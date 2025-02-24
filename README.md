@@ -14,7 +14,7 @@ TextMiner is a **MERN stack** application that allows users to **search text** w
 
 ## 🎥 Demo  
 
-[Live Demo](https://textminer.vercel.app)  
+[Live Demo](https://text-miner.vercel.app/)
 
 ## 📂 Installation  
 
@@ -59,9 +59,7 @@ Then follow your hosting provider's instructions.
 - **Algorithms:** Sliding Window & Two-Pointer for efficient search  
 - **Deployment:** Render (Backend), Vercel (Frontend)  
 
-## 📸 Screenshots  
 
-![TextMiner UI](https://your-image-link.png)  
 
 ## 👨‍💻 Author  
 
@@ -74,4 +72,4 @@ This project is licensed under the **MIT License**.
 ## 🔗 Links  
 
 📂 **GitHub Repository:** [TextMiner](https://github.com/NitenKumawat/TextMiner)  
-🌐 **Live Demo:** [textminer.vercel.app](https://textminer.vercel.app)  
+🌐 **Live Demo:** [textminer.vercel.app](https://text-miner.vercel.app/)  
